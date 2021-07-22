@@ -1,0 +1,289 @@
+
+
+@media (max-width: 1200px) {
+  #bottleHolderHolder {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    min-height: 150px;
+  }
+}
+
+#container {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#bottleHolder {
+  min-width: 1200px;
+  max-width: 1600px;
+  position: relative;
+  text-align: center;
+  display: table;
+  border-collapse: collapse;
+  vertical-align: bottom;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bottleHolder a {
+  vertical-align: bottom;
+  padding: 2px;
+  display: table-cell;
+  cursor: pointer;
+}
+
+#bottleHolder a img {
+    display: block;
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    opacity: .6;
+    max-width: 100px;
+}
+
+#bottleHolder a.active img {
+    opacity: 1;
+}
+
+#searchbox {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#search {
+  width: 145px;
+  display: inline;
+}
+@media (max-width: 795px) {
+  #search {
+    width: calc(100% - 10px);
+  }
+  #bottleList {
+    display: block;
+    margin-top: 5px;
+  }
+  #bottleList select {
+    margin-bottom: 1px;
+    margin-top: 1px;
+  }
+}
+#cocktailHolder {
+  display: inline-flex;
+  width: auto;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1280px;
+}
+@media (max-width: 1300px) {
+  #cocktailHolder {
+    width: 1120px;
+  }
+}
+@media (max-width: 1140px) {
+  #cocktailHolder {
+    width: 960px;
+  }
+}
+@media (max-width: 980px) {
+  #cocktailHolder {
+    width: 800px;
+  }
+}
+@media (max-width: 820px) {
+  #cocktailHolder {
+    width: 640px;
+  }
+}
+@media (max-width: 660px) {
+  #cocktailHolder {
+    width: 480px;
+  }
+}
+@media (max-width: 500px) {
+  #cocktailHolder {
+    width: 320px;
+  }
+}
+@media (max-width: 340px) {
+  #cocktailHolder {
+    width: 160px;
+  }
+}
+
+body {
+  text-align: center;
+}
+
+.cocktailFrame {
+  float: left;
+  cursor: pointer;
+}
+
+.cocktailFrame {
+  width: 150px;
+  text-align: center;
+  margin: 5px;
+}
+
+.cocktailFrame.original h6:after {
+  content: '*';
+  color: red;
+}
+
+.cocktailFrame img, .cocktailFrame button {
+  width: 148px;
+  height: 148px;
+  margin-bottom: 5px;
+}
+
+.cocktailPost {
+  width: 95%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.cocktailPost img {
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  margin-bottom: 10px;
+}
+
+.cocktailPost .text, .cocktailPost .directions, .cocktailPost .extra, .cocktailPost .seinfeld {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.cocktailPost h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cocktailPost .extra, .cocktailPost .seinfeld {
+  font-style: italic;
+}
+
+.cocktailPost .exitDrink {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+ul.ilist {
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+ul.ilistframe {
+  text-align: left;
+  margin-bottom: 20px;
+  border: none;
+  width: 148px;
+  background: transparent;
+  border: none;
+}
+
+ul.ilistframe li {
+  font-size: 8pt;
+  padding: 2px 8px;
+  border: none;
+  background: transparent;
+}
+
+.cocktailFrame.full ul.ilistframe  {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.list-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.list-group-item + .list-group-item {
+    border-top-width: 0;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.cocktailFrame.full {
+  border: 1px solid #ced4da;
+  border-radius: 0px 0px 6px 6px;
+  max-height: 400px;
+  transition: max-height 1s ease-in;
+}
+
+.cocktailFrame.full h6 {
+  padding: 4px;
+}
+
+li.whn {
+  font-weight: bold;
+}
+
+a.drinkLink, a.allbottles, a[href]:not(.btn):not(.cocktailFrame) {
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+
+#searchbox .euiFormControlLayout {
+  width: auto;
+  display: inline-block;
+  padding: 0 4px;
+}
+
+#searchbox .euiFormControlLayout select {
+  padding: 0 30px 0 8px;
+  font-weight: bold;
+}
+
+#searchbox .euiFormControlLayoutIcons--right {
+  right: 6px;
+}
+
+#searchbox a {
+  color: #000;
+  font-weight: bold;
+}
+
+a.cocktailFrame {
+ color: #343741;
+}
+
+#searchbox input.euiFieldSearch {
+  width: 180px;
+}
