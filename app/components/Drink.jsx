@@ -27,10 +27,10 @@ module.exports = function Drink({drinkKey, setCocktail, setSearch}) {
       <Helmet>
         <title>{cocktail.name}</title>
         <meta name="description" content="" />
-        <meta property="og:image" content={require('/images/cocktails/' + cocktail.code + '.gif').default} />
+        <meta property="og:image" content={'http://cocktailsaboutnothing.com/images/cocktails/' + cocktail.code + '.gif'} />
       </Helmet>
         <EuiIcon className={"exitDrink"} type="cross" size="large" onClick={() => goBack() } />
-        <img height={"400"} src={require('/images/cocktails/' + cocktail.code + '.gif').default} />
+        <img height={"400"} src={'http://cocktailsaboutnothing.com/images/cocktails/' + cocktail.code + '.gif'} />
         <br />
         <h2 className={"name"}>{cocktail.name}</h2>
         {cocktail.seinfeld &&
